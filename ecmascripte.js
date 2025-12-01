@@ -210,6 +210,17 @@ fruit.at() // ka i3tik indice li fe string   =behal hadii  fruit[]
 
 let strr = 'Maroc,Egypte,Tunisie'
 let aplphabets = 'ABC'
+const countries1 = strr.split(':')
 
 console.log(Array.from(str)) // kat3tik kola letter fe un case : "M","a","r","c".............etc
 console.log(aplphabets.split(',')) // hadi ghir katfer9 lina bahd el hadat ,  bhal  "A","B","C"
+
+//  bhgina indice the strr 
+const keys = countries1.keys()
+
+for( let key of keys){
+    console.log(key)
+}
+
+// Search : 
+
