@@ -206,7 +206,7 @@ fruit.at() // ka i3tik indice li fe string   =behal hadii  fruit[]
 
 
 // vedio 8 
-// Array function      array  = est un tableau
+//String Array function      array  = est un tableau
 
 let strr = 'Maroc,Egypte,Tunisie'
 let aplphabets = 'ABC'
@@ -218,9 +218,105 @@ console.log(aplphabets.split(',')) // hadi ghir katfer9 lina bahd el hadat ,  bh
 //  bhgina indice the strr 
 const keys = countries1.keys()
 
-for( let key of keys){
+  for( let key of keys){
     console.log(key)
 }
 
 // Search : 
+// hadi ghir ktal9a sfi kathebss 
+countries1.find(function(value){
+    return value === "Maroc";
+    return value.startsWith('Ma'); // Maroc
+})
+console.log(countries1)
 
+// filtter:
+// kat9elb fe tablaux / array kamla 
+countries1.filter(function(value){
+    return value === "Maroc";
+    return value.startsWith('Ma'); // Maroc
+})
+console.log(countries1)
+
+// hadi kt3tini index 
+countries1.filterIndex(function(value){
+    return value === "Maroc";
+    return value.startsWith('Ma'); // 1
+})
+console.log(countries1.at(index))
+
+
+const tj = countries1.findIndex = (value) => value.startsWith('Ma')
+console.table(countries1.at(index)) //
+
+
+// vedio 9: 
+// forEach
+// Affichage du tableaux
+const fruits = ['banana', 'apple' ,'berries']
+
+
+const display = function(fruit,key){
+    console.log(Array[$key - 1]) // ki n9ass mnaha -1 
+    console.log(`${key} : {fruit}`) // katekb lik dakchi lii fruits mit key insdex
+}
+
+fruits.forEach(display);
+
+// hadi old methods : 
+for(let i=0 ; i<fruits.length ; i++){
+    console.log(`${i}${fruits[i]}`);
+}
+
+// the new methods : 
+// db hadi makatijibch lina key lidalika khasna nslt3mlou had function entries
+// wlakin men el ahessan khedem b forEach
+for(let fruit of fruits.entries){
+    console.log(`${key} : ${fruit}`);
+}
+
+
+// les function aqui est change le tableux
+let  number1 [0,1,2,3,4,5,6];
+
+// map kathtajj collback kat changer fe element du tableux 
+numbers1 = number1.map(function(value){
+    return value  * 2 ;
+})
+console.log(numbers1)
+
+// filter un tableux 
+numbers1 = number1.filter(function(value){
+    return value  > 2 ;
+})
+console.log(numbers1)
+
+
+// bhal filter  wlakin khass dack condutions lidkhelti minimun itha9a9e ghir 1  true / false
+numbers1 = number1.some(function(value){
+    return value  === '2' ;
+})
+console.log(numbers1)
+
+// bhale some walakin khase kolchii ithe9a9e 
+numbers1 = number1.every(function(value){
+    return value > 7 ;  
+})
+console.log(numbers1)  // false
+
+
+// fill 
+let everyNumbers = [0,1,2,3,4,5,6]
+
+
+let  fillNumbers = [0,1,2,3]; 
+fillNumbers = fillNumbers.fill(0,2,5)   //ka3mr li 0, ou katbda men index 2 tal 5 
+console.log(everyNumbers)
+
+//reduce
+// kandir menine bda hetal fin 
+let reduceNumbers = [1,2,3,4,5,6,7,8,9,]
+let summ = reduceNumbers.reduce(function(accumulator  , value){
+    return accumulator+value
+},0)
+console.log(summ); 
