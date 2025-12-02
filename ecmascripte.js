@@ -148,7 +148,7 @@ if (18 < adulte) {
 }
 let newSt = `${age< 18 ? 'Mineur' : 'Adulte'}`  // condtution bhal if 
 
-
+// verbertuing
 // vedio 6 : 
 //  Spread syntax (...)  = work on iterable
 
@@ -320,3 +320,64 @@ let summ = reduceNumbers.reduce(function(accumulator  , value){
     return accumulator+value
 },0)
 console.log(summ); 
+
+
+// math function
+ Math.trunc() // hadi ka theyd like "  ,  "
+ Math.sign() // kired (1) oder (-1) 3la hessab sign de la valeur
+ Math.cbrt() // racine 
+ Math.log
+
+ 
+ // number function : 
+ let Number = Number.MIN_SAFE_INTEGER
+ let Number1 = Number.MAX_SAFE_INTEGER
+
+ // isInteger : katcheff wach int / true and false
+ console.log(Number1.IsInteger(Number1.MAX_SAFE_INTEGER+598650))
+
+ // isSafeInteger : hadi khasha tkon binnne max ou min :
+ console.log(Number1.isSafeInteger(Number1.MAX_SAFE_INTEGER+598650))
+
+ //isNaN   douk li machi nomber ka tl3 fihom true / est number false 
+ console.log(isNaN('98'))
+
+ // // typeof : kichof wach kisawii dack condution li 
+ console.log(typeof number == 'number')
+
+
+ //  isFinite katchof wach value ki imchi infini
+ console.log(isFinite(/* value*/))
+
+// BigInt
+
+let numm1 = BigInt("3259999999999999999999999999999999999999")
+
+// VEDIO 12
+//set collection : 
+
+const countriess1 = ['Maroc' ,'Algerie' ,'Tunisie' ,'Egypte']
+
+
+// hiya bhal tableux mais blan maki3wdch fiha value 
+let setCoutries = new Set()
+setCoutries.add('Maroc')
+setCoutries.add('algerie')
+setCoutries.add('tunisie')
+setCoutries.add('egypte')
+
+//aute fun dans set 
+console.log(set)
+console.log(set.value) // iterator 
+console.log(set.has(/* value */)) //finde value
+console.log(set.size)  //chehal men valeur li kayna 
+console.log(set.keys()) // kat3tinii keys li 3ndi fe tableux 
+console.log(set.delete())
+console.log(set.entries())  // iterotor : keys value
+console.log(set.clear)
+
+// map collection : 
+
+
+
+
